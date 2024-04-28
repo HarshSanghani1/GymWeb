@@ -1,4 +1,4 @@
-/* styles.css */
+styles.css
 
 footer {
     background-color: #000000;
@@ -63,4 +63,82 @@ footer {
     
     width: 100%;
   }
-  
+  /* Apply scrolling view to all pages */
+/* body {
+  overflow-y: scroll;
+} */
+
+/* Smaller header */
+.header {
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Smaller footer */
+.footer {
+  height: 40px; /* Adjust height as needed */
+}
+/* Footer styles */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 0 0 30%; /* Equal width for each section */
+  margin-bottom: 20px;
+}
+
+.footer-left h3,
+.footer-middle h3,
+.footer-right h3 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 5px;
+}
+
+.footer-middle ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-middle ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #666;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
