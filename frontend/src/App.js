@@ -53,7 +53,7 @@
 
 
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
@@ -68,16 +68,16 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
+        <Header className="Header" />
+        <Routes className="Routes">
+          <Route path="/" element={<Home className="Home" />} />
+          <Route path="/Login" element={<Login className="Login"/>}></Route>
+          <Route path="/Register" element={<Register className="Register"/>}></Route>
+          <Route path="/about" element={<About className="About" />} />
+          <Route path="/contact" element={<Contact className="Contact" />} />
+          <Route path="/services" element={<Services className="Services" />} />
         </Routes>
-        <Footer />
+        <Footer className="Footer" />
       </div>
     </BrowserRouter>
   );

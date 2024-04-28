@@ -100,8 +100,8 @@
 import React, { useState } from 'react';
 import styles from './Login.module.css';
 import { Link } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
+// import Header from './Header';
+// import Footer from './Footer';
 
 
 function LoginForm() {

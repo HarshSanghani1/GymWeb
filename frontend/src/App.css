@@ -1,7 +1,7 @@
 /* General styles */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 20px;
 }
 
@@ -26,8 +26,11 @@
 .Home,
 .About,
 .Contact,
+.Login,
+.Register,
 .Services {
   margin-bottom: 40px;
+  /* margin-top: 400px; no diff */
 }
 
 /* Footer styles */
@@ -72,3 +75,18 @@
 body{
   overflow-y: scroll;
 }
+
+/* by hitendra */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* Add your styles here */
